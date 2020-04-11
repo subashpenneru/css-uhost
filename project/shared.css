@@ -72,7 +72,7 @@ body {
 }
 
 .main-nav {
-    display: inline-block;
+    display: none;
     text-align: right;
     width: calc(100% - 122px);
     vertical-align: middle;
@@ -199,4 +199,14 @@ body {
 
 .open {
     display: block !important;
+}
+
+@media (min-width: 40rem) {
+    .toggle-button {
+        display: none;
+    }
+
+    .main-nav {
+        display: inline-block;
+    }
 }
